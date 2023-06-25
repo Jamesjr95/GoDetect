@@ -12,6 +12,15 @@ This project is an infrastructure provisioning project using Terraform and AWS. 
 - High Availability: The infrastructure is designed to be highly available by distributing resources across different availability zones.
 - Automated Deployment: GitHub Actions is used to automate the deployment process, making it easier to maintain and manage the infrastructure.
 
+## Requirements
+
+- AWS Account: Access to an AWS account to provision the infrastructure resources.
+- AWS Credentials: Valid AWS access key ID and secret access key with appropriate permissions.
+- Terraform: Installed Terraform CLI version 0.13.0 or higher on your local machine.
+- GitHub Repository: A GitHub repository to store the project code and utilize GitHub Actions.
+
+Ensure that the AWS credentials are securely stored and properly configured in the environment or as GitHub secrets.
+
 ## Technologies Used
 
 - Terraform: Infrastructure provisioning tool used to define and manage AWS resources.
@@ -24,12 +33,3 @@ This project is an infrastructure provisioning project using Terraform and AWS. 
 - Route Tables: Define routing rules for network traffic.
 - S3 Bucket: Storage for Terraform state file and versioning.
 - DynamoDB Table: Locking mechanism for Terraform state file.
-
-## Requirements
-
-- AWS Account: Access to an AWS account to provision the infrastructure resources.
-- AWS Credentials: Valid AWS access key ID and secret access key with appropriate permissions.
-- Terraform: Installed Terraform CLI version 0.13.0 or higher on your local machine.
-- GitHub Repository: A GitHub repository to store the project code and utilize GitHub Actions.
-
-Ensure that the AWS credentials are securely stored and properly configured in the environment or as GitHub secrets.

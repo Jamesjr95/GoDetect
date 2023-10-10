@@ -28,28 +28,24 @@ AWS Credentials: Setup your AWS credentials. This can be done using the AWS CLI:
     
 ## Usage
 
-Clone the Repository
-
-  bash
+1. **Clone the Repository**
   
-    git clone <your-repo-link>
-    cd <your-repo-directory>
+       git clone <your-repo-link>
+       cd <your-repo-directory>
 
-**Initialize Terraform**
+2. **Initialize Terraform**
 
-bash
+       terraform init
 
-    terraform init
+3. **Apply the Changes**
 
-**Apply the Changes**
-
-    terraform apply
+       terraform apply
 
 - Enter yes when prompted.
 
-**Destroy Resources (If Needed)**
+4. **Destroy Resources (If Needed)**
 
-    terraform destroy
+       terraform destroy
 
 - Enter yes when prompted.
 

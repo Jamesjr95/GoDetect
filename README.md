@@ -20,16 +20,43 @@ This project is an infrastructure provisioning project using Terraform and AWS. 
 - GitHub Repository: A GitHub repository to store the project code and utilize GitHub Actions.
 
 Ensure that the AWS credentials are securely stored and properly configured in the environment or as GitHub secrets.
+ 
+AWS Credentials: Setup your AWS credentials. This can be done using the AWS CLI:
 
-## Technologies Used
+    aws configure   
+    
+## Usage
 
-- Terraform: Infrastructure provisioning tool used to define and manage AWS resources.
-- AWS (Amazon Web Services): Cloud platform where the infrastructure is provisioned.
-- GitHub Actions: CI/CD platform used for automating the deployment process.
-- Amazon VPC: Virtual Private Cloud for networking isolation.
-- Subnets: Divided network segments for organizing resources.
-- Internet Gateway: Enables communication between VPC and the internet.
-- NAT Gateway: Provides outbound internet access for resources in private subnets.
-- Route Tables: Define routing rules for network traffic.
-- S3 Bucket: Storage for Terraform state file and versioning.
-- DynamoDB Table: Locking mechanism for Terraform state file.
+Clone the Repository
+
+  bash
+  
+    git clone <your-repo-link>
+    cd <your-repo-directory>
+
+Initialize Terraform
+
+bash
+
+    terraform init
+
+Apply the Changes
+
+    terraform apply
+
+Enter yes when prompted.
+
+Destroy Resources (If Needed)
+
+    terraform destroy
+
+Enter yes when prompted.
+
+## Conclusion
+
+Notes
+Ensure you have the necessary permissions in AWS to create these resources.
+The S3 bucket for Terraform state has forced destroy enabled. Backup any important data.
+Make sure the S3 bucket name you provide follows AWS naming conventions.
+If deploying in an automated environment, ensure AWS credentials are accessible in that environment.
+Adjust the provider region in the configuration if deploying to a region other than us-east-1.

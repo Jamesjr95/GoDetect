@@ -1,5 +1,4 @@
-## Project Name
-InfraSync
+# InfraSync
 
 ## Description
 

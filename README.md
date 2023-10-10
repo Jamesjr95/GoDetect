@@ -35,27 +35,26 @@ Clone the Repository
     git clone <your-repo-link>
     cd <your-repo-directory>
 
-Initialize Terraform
+**Initialize Terraform**
 
 bash
 
     terraform init
 
-Apply the Changes
+**Apply the Changes**
 
     terraform apply
 
-Enter yes when prompted.
+- Enter yes when prompted.
 
-Destroy Resources (If Needed)
+**Destroy Resources (If Needed)**
 
     terraform destroy
 
-Enter yes when prompted.
+- Enter yes when prompted.
 
 ## Notes
 
-Notes
 Ensure you have the necessary permissions in AWS to create these resources.
 The S3 bucket for Terraform state has forced destroy enabled. Backup any important data.
 Make sure the S3 bucket name you provide follows AWS naming conventions.

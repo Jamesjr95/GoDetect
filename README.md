@@ -52,7 +52,7 @@ Destroy Resources (If Needed)
 
 Enter yes when prompted.
 
-## Conclusion
+## Notes
 
 Notes
 Ensure you have the necessary permissions in AWS to create these resources.
